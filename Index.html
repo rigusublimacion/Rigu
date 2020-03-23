@@ -1,0 +1,53 @@
+<! DOCTYPE html >
+< html  lang = " es " >
+< cabeza >
+    < meta  charset = " UTF-8 " >
+    < meta  name = " viewport " content = " ancho = ancho del dispositivo, escala inicial = 1.0 " >
+    < meta  http-equiv = " X-UA-Compatible " content = " ie = edge " >
+    < título > Reservas Rigu Sublimacion </ título >
+    < link  rel = " stylesheet " href = " css / estilos.css " >
+</ cabeza >
+< cuerpo >
+    < form  action = "" class = " formulario " >
+       
+       < h1  class = " formulario__titulo " > RIGU </ h1 >
+       < h3  class = " formulario__subtitulo " > cOMPRAS </ h3 >
+       < p  class = " formulario__parrafo " > Llena este pequeño formulario para ayudarte con tu pedido. </ p >
+       
+        < label  for = " nombre " class = " formulario__label " > ¿Cual es tu nombre? </ etiqueta >
+        < input  id = " cliente " type = " text " class = " formulario__input " obligatorio >
+        
+        
+        < label  for = " fecha " class = " formulario__label " > Indica la fecha de tu pedido </ label >
+        < input  id = " fecha " type = " date " class = " formulario__input " patrón requerido  = " [0-9] {4} - [0-9] {2} - [0-9] {2} " >
+        
+        
+        < label  for = " hora " class = " formulario__label " > Indica la hora de tu pedido </ label >
+        < input  id = " hora " type = " time " class = " formulario__input " min = " 07:00 " max = " 21:00 " step = " 3600 " requerido >
+        
+        < label  for = " entregas " class = " formulario__label " > Selecciona la entrega de tu pedido </ label >
+        < Seleccione  ID = " entregas " nombre =" listaentrega " clase =" formulario__input " >
+            < option  value = " Contra Entrega " > Contra Entrega </ option >
+            < option  value = " Recoger en Local " > Recoger en Local </ option >
+        </ select >
+        
+        < label  for = " servicios " class = " formulario__label " > ¿Cuál es el servicio que se desea realizar? </ etiqueta >
+        < select  id = " servicio " name = " listaservicios " class = " formulario__input " >
+            < opción > Sublimacion - $ 9,000 </ opción >
+            < opción > Camisetas personalizada desde - $ 15,000 </ opción >
+            < opción > Mugs personalizado - $ 15,000 </ opción >
+            < opción > Gorras personalizadas - $ 12,000 </ opción >
+            < opción > termos personalizados - $ 25,000 </ opción >
+            < opción > Carcasa personalizadas - $ 25,000 </ opción >
+            < opción > Llaveros personalizados - $ 12.000 </ opción >
+            < opción > producto de Litografia desde - $ 15.000 </ opción >
+            < opción > Otros servicios </ opción >
+        </ select >
+        
+
+        < button  id = " submit " class = " formulario__submit " > Enviar un WhatsApp </ button >
+       <! - https://api.whatsapp.com/send?phone=573229299191&text=*_RIGU%20SUBLIMACIÓN_*%20%0ACompras%0A%0A*%C2%BFCual%20es%20tu%20nombre?*%0A"Nombres?*%0A"Nombres?*%0A"Nombres "% 20% 0A * Servicios% 20de% 20preferencia *% 0A" Recogida "% 20% 0A ->
+    </ form >
+    < script  src = " js / form.js " > </ script >
+</ cuerpo >
+</ html >
